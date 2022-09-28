@@ -10,7 +10,7 @@ html,body{
 
 body{
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
+   overflow-x: hidden; 
 }
 
 :root{
@@ -128,7 +128,7 @@ nav svg{
   font-family: var(--primary-font), sans-serif;
 }
 .videos video{
-  width: 100%;
+  width: 75%;
   border-radius: 1rem;
   margin: 1rem;
 
@@ -147,18 +147,47 @@ nav svg{
 }
 
 .about{
+  
   color: var(--secondary-color);
   
 }
 .about h2{
   font-family: var(--primary-font), sans-serif;
   text-align: center;
+  
 }
 .about p{
   line-height: 150%;
   font-size: 1.2rem;
+  text-align: center;
 }
 .about img{
-  width: 100%;
+  display: block;
+  width: 75%;
   margin-top: 2rem;
+  margin-inline: auto;
+}
+
+@media screen and (min-width:768px){
+  body{
+    padding: 10%;
+  }
+  .videos{
+    display: flex;
+    gap: 2rem;
+  }
+  .about{
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+    
+  }
+  .about img{
+    width: 50%;
+  }
+  .our-story{
+    align-self: center;
+    
+  }
+
 }
